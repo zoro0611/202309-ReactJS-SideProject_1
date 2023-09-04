@@ -3,10 +3,8 @@ import Menu from "./Menu";
 const MainShop = () => {
     return (
         <div className="flex w-full mt-5">
-            <BestSales 
-                className=""
-            />
-            <Menu className=""/>
+            <BestSales/>
+            <Menu/>
         </div>
     )
 }
