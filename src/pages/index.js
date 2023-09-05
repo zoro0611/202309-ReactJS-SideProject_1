@@ -5,6 +5,8 @@ import Advertisement from '../components/Advertisement'
 import ShopInfo from '../components/ShopInfo'
 import FunctionButtonList from '../components/FunctionButtonList'
 import MainShop from '@/components/MainShop'
+import Footer from '@/components/Footer'
+import TryChildren from '@/components/TryChildren'
 
 const Home = ()=>{
   return (
@@ -15,10 +17,12 @@ const Home = ()=>{
       <ShopInfo/>
       <FunctionButtonList/>
       <MainShop/>
-      <div className="p-3">
-        <a className="text-gray-400" target='_blank' href='https://moderneat.vercel.app/'>@All CopyRight belongs to Modern Eat</a>
-      </div>
+      
+      <TryChildren/>
+      
+      <Footer/>
     </div>
+
   )
 }
 
