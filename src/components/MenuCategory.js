@@ -1,8 +1,8 @@
 import MenuCategoryItem from "./MenuCategoryItem"
 
-const MenuCategory = ({ key, category, cateItems = [] }) => {
+const MenuCategory = ({ ind, category, cateItems = [] }) => {
     return (
-        <div key={key} className="mt-3">
+        <div key={ind} className="mt-3">
             <h1 className="text-[30px] font-bold">{category}</h1>
             <div className="flex flex-wrap mt-3">
                 {

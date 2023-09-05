@@ -2,9 +2,6 @@ import {ChevronRightIcon} from '@radix-ui/react-icons'
 
 const BreadCrumb = () => {
     const breadArray = ['台灣', '台北市', '台北', '中正區','寵物可愛小屋'];
-    breadArray.forEach(element => {
-        console.log(element)
-    })
     return (
         <div className="w-max text-left mt-3">
             <nav aria-label="breadcrumb">
@@ -12,7 +9,7 @@ const BreadCrumb = () => {
                     {
                         breadArray.map((item, index) => {
                             return(
-                                <li className="flex cursor-pointer items-center font-sans text-sm font-normal leading-normal text-blue-gray-900 antialiased transition-colors duration-300 ">
+                                <li key={index} className="flex cursor-pointer items-center font-sans text-sm font-normal leading-normal text-blue-gray-900 antialiased transition-colors duration-300 ">
                                     {
                                         index !== breadArray.length - 1 ? (
                                             <a className="text-gray-400 hover:text-pink-500" href="#">
