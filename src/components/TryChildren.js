@@ -1,5 +1,5 @@
 //import很多Icon from "@radix-ui/react-icons";
-import ChildCom from "./ChildCom";
+import ChildCom from "./TrySingleChild";
 
 import { DotFilledIcon, SketchLogoIcon, PlusIcon  } from "@radix-ui/react-icons";
 
