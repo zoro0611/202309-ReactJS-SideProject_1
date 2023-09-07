@@ -60,6 +60,26 @@ const AllItems = [
         ]
     },
     {
+        "CategoryName": "飲料",
+        "Data": [
+            {
+                image: "items/9.webp",
+                title: "拿鐵",
+                price: 3.99,
+            },
+            {
+                image: "items/10.webp",
+                title: "卡布奇諾",
+                price: 3.99,
+            },
+            {
+                image: "items/12.webp",
+                title: "美式咖啡",
+                price: 3.99,
+            },
+        ]
+    },
+    {
         "CategoryName": "其他",
         "Data": [
             {

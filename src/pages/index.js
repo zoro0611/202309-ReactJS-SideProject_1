@@ -18,7 +18,7 @@ const Home = ()=>{
       <FunctionButtonList/>
       <MainShop/>
       
-      <TryChildren/>
+      {/* <TryChildren/> */}
       
       <Footer/>
     </div>

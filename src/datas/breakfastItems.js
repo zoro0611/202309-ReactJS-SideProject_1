@@ -29,5 +29,10 @@ const breakfastItems = [
     "菠菜芝士餡餅",
     "香蕉鬆餅",
     "早餐玉米餅",
+    "燕麥片和酸奶",
+    "燕麥片和水果",
+    "燕麥片和果醬",
+    "燕麥片和果醬",
+    "燕麥片和果醬",
 ];
 export default breakfastItems;
