@@ -1,6 +1,6 @@
 <h1>Git update history<h1/>
 
-###[2023/9/10 Update進度]
+<h3>[2023/9/10 Update進度]</h3>h3>
 1. 將component放入資料夾跟重新命名index
 2. 將資料改從index統一用prop往下傳遞
 3. 使用Redux統一管理State狀態
