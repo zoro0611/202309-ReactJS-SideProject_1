@@ -1,4 +1,4 @@
-#Git update history
+<h1>Git update history<h1/>
 
 ###[2023/9/10 Update進度]
 1. 將component放入資料夾跟重新命名index
