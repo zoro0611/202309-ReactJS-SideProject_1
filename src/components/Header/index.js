@@ -1,7 +1,7 @@
 import {HamburgerMenuIcon} from '@radix-ui/react-icons'
 
-import Cart from './Cart'
-import Search from './Search'
+import Cart from '../Cart'
+import Search from '../Search'
 
 const Header = () => {
     return (

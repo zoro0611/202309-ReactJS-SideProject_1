@@ -1,0 +1,22 @@
+import MenuCategoryItem from "../MenuCategoryItem"
+
+const MenuCategory = ({ itemId, category, cateItems = [] }) => {
+    console.log(itemId)
+    return (
+        <div className="mt-3">
+            <h1 className="text-[30px] font-bold" id={itemId}>{category}</h1>
+            <div className="flex flex-wrap mt-3">
+                {
+                    cateItems?.map((item, index) => {
+                        return (
+                            <MenuCategoryItem key={index}  data={item}/>
+                        )
+                    })
+                }
+            </div>
+            
+        </div>
+    )
+}
+
+export default MenuCategory

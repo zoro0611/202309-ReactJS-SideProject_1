@@ -1,0 +1,25 @@
+import { PlusIcon, TrashIcon } from "@radix-ui/react-icons"
+// import { useState } from "react"
+
+const AddCartButton = ({count, onAdd, onRemove }) => {
+    const isAdd = count > 0
+    //如果count > 0，
+    return (
+        <div className="flex absolute top-6 right-6 p-2 bg-black rounded-full font-bold hover:bg-gray-700 cursor-pointer" >
+            
+            {
+                isAdd && (
+                    <div>
+                        <span className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center select-none">{count}</span>
+                        <TrashIcon className="text-white mr-2" onClick={onRemove}/>
+                    </div>
+                )
+            }
+            <PlusIcon className="text-white first-line"  onClick={onAdd}/>
+            
+
+        </div>
+    )
+}
+
+export default AddCartButton

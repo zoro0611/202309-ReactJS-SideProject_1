@@ -1,4 +1,4 @@
-import FunctionButton from '../components/FunctionButton'
+import FunctionButton from '../FunctionButton'
 
 const functionList = [
     { funcName: '查看類似商品', iconName: '' },

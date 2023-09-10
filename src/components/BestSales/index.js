@@ -1,7 +1,6 @@
 import { TriangleRightIcon } from "@radix-ui/react-icons";
-import breakfastItems from "@/datas/breakfastItems";
-
-const BestSales = () => {
+import { Link } from 'react-scroll';
+const BestSales = ({data}) => {
     return (
         <div className="max-h-screen overflow-auto scrollbar-hide">
             <div className="pb-20">
@@ -9,11 +8,20 @@ const BestSales = () => {
                 
                 <ul className="">
                 {
-                    breakfastItems.map((item, index) => {
+                    data?.map((item, index) => {
+                        const key = `${item}-${index}`
+                        console.log(key)
                         return (
                             <li key={index} className="flex items-center relative ">
                                 <TriangleRightIcon className=""/>
-                                <a className="px-3 py-1 hover:bg-slate-200 hover:rounded-full" href="#">{item}</a>
+                                <Link className="px-3 py-1 hover:bg-slate-200 hover:rounded-full cursor-pointer" 
+                                    // href={`#${key}`}  
+                                    to={`${key}`} 
+                                    smooth={true} 
+                                    duration={500}
+                                >
+                                    {item}
+                                </Link>
                             </li>
                         )
                     })
