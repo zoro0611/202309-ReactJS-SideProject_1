@@ -1,8 +1,8 @@
 <h1>Git update history<h1/>
 
 <h3>[2023/9/10 Update進度]</h3>
-<div>
-1.將component放入資料夾跟重新命名index
+
+1. 將component放入資料夾跟重新命名index
 
 2. 將資料改從index統一用prop往下傳遞
    
@@ -13,7 +13,7 @@
 5. 使用第三方套件React-scroll，調整UI/UX讓最熱門標籤可以直接平滑移動到右邊的商品Category
    
 6. 練習整理API取得的rawData，再存入useState中定義的refinedData
-</div>
+
 
 ![2023/9/10 Update進度](https://github.com/zoro0611/PublicPhoto/blob/fd730f69e9d47626fab7d25bb01da4781fb63d32/React/ShopPage_20230910.png)
 
