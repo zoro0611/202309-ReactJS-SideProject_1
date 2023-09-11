@@ -15,15 +15,18 @@ const MenuCategoryItem = ({data}) => {
         dispatch(remove({ id: data.id }));
     }
 
+    const keyId = `${data.id}-${data.title}` // '15-煙燻三文魚漢堡'
     const cartCount = count || 0;
     return (
         <div className="w-[200px] p-4 mr-3 mb-10 relative  hover:shadow-xl cursor-pointer">
             <AddCartButton 
+                // data-testid={keyId}
+                testId = {keyId}
                 count={cartCount}
                 onAdd={handleAdd} 
                 onRemove={handleRemove}
             />
-            <img className="w-full h-[100px] select-none" src={data.image} />
+            <img className="w-full h-[100px] select-none" alt="itemImg" src={data.image} />
             <h3>{data.title}</h3>
             <p>$ {data.price}</p>
         </div>
