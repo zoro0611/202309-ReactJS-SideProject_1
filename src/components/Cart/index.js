@@ -5,8 +5,7 @@ import { useSelector } from "react-redux";
 
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
-  const validCartItems = cart.filter((item) => item !== null && item !== 'empty');
-  const count = validCartItems.reduce((a, b) => a + b, 0);
+  const count = Object.values(cart).reduce((a, b) => a + b, 0);
 
   return (
     <div id='cart' className='min-w-[100px] flex items-center justify-around bg-black w-[150px] h-[40px] px-3 mr-6 rounded-full cursor-pointer hover:bg-slate-700'>

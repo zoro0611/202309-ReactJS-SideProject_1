@@ -6,10 +6,10 @@ const Menu = ({data}) => {
         <div className="flex-1 p-3">
             {
                 data?.map((cate, index) => {
-                    const key = `${cate.CategoryName}-${index}`
+                    const keyId = `${cate.CategoryName}-${index}`
                     
                     return (
-                        <MenuCategory itemId={key} category={cate.CategoryName} cateItems={cate.Data}/>
+                        <MenuCategory key={index} itemId={keyId} category={cate.CategoryName} cateItems={cate.Data}/>
                         
                     )
                 })

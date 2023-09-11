@@ -1,7 +1,7 @@
 import MenuCategoryItem from "../MenuCategoryItem"
 
 const MenuCategory = ({ itemId, category, cateItems = [] }) => {
-    console.log(itemId)
+    // console.log(cateItems)
     return (
         <div className="mt-3">
             <h1 className="text-[30px] font-bold" id={itemId}>{category}</h1>

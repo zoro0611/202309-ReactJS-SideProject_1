@@ -10,7 +10,6 @@ const BestSales = ({data}) => {
                 {
                     data?.map((item, index) => {
                         const key = `${item}-${index}`
-                        console.log(key)
                         return (
                             <li key={index} className="flex items-center relative ">
                                 <TriangleRightIcon className=""/>
