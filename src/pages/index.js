@@ -14,16 +14,6 @@ import store from '@/datas/store';
 
 const Home = ()=>{
   return (
-    // <div>
-    //   <Header/>
-    //   <BreadCrumb/>
-    //   <Advertisement/>
-    //   <ShopInfo/>
-    //   <FunctionButtonList/>
-    //   <MainShop/>
-    //   <Footer/>
-    // </div>
-      
       <Provider store={store}>
             <Header/>
             <BreadCrumb/>

@@ -8,7 +8,6 @@ const MenuCategory = ({ itemId, category, cateItems = [] }) => {
             <div className="flex flex-wrap mt-3">
                 {
                     cateItems?.map((item, index) => {
-                        console.log(item)
                         return (
                             <MenuCategoryItem key={index}  data={item}/>
                         )
