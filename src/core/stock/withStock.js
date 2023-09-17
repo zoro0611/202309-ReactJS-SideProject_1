@@ -3,8 +3,7 @@ import useCart from "@/hooks/useCart";
 
 const withStock = (Component) => {
     const WithStockComponent = (props) => {
-        console.log(props)
-        const [stock, setStock] = useState(2);
+        const [stock, setStock] = useState(5);
         const { count, handleAdd, handleRemove } = useCart(props.data.id);
 
         const handleAddWithStock = (e) => {
@@ -26,6 +25,7 @@ const withStock = (Component) => {
                 {...props}
                 count={count}
                 finished={stock===0}
+                stock={stock}
                 handleAdd={handleAddWithStock}
                 handleRemove={handleRemoveWithStock}
             />

@@ -7,6 +7,7 @@ import withStock from "@/core/stock/WithStock";
 const MenuCategoryItem = ({
         data,
         count,
+        stock,
         finished,
         handleAdd,
         handleRemove
@@ -15,13 +16,14 @@ const MenuCategoryItem = ({
     const keyId = `${data.id}-${data.title}` // '15-煙燻三文魚漢堡'
     return (
         <div className="w-[200px] p-4 mr-3 mb-10 relative  hover:shadow-xl cursor-pointer">
-            
+            <div className=" flex items-center justify-center select-none text-[14px]"data-testid="stock">庫存: {stock}</div>
             <img className="w-full h-[100px] select-none" alt="itemImg" src={data.image} />
             {!finished && (
 					<AddCartButton 
                     // data-testid={keyId}
                     testId = {keyId}
                     count={count}
+                    stock={stock}
                     onAdd={handleAdd} 
                     onRemove={handleRemove}
                 />
