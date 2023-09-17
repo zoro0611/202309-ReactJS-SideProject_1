@@ -1,7 +1,7 @@
 import { PlusIcon, TrashIcon } from "@radix-ui/react-icons"
 // import { useState } from "react"
 
-const AddCartButton = ({testId, count, stock, onAdd, onRemove }) => {
+const AddCartButton = ({testId, count, onAdd, onRemove }) => {
     const isAdd = count > 0
     //如果count > 0，
     return (

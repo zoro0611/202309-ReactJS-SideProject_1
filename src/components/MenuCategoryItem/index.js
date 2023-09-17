@@ -23,7 +23,6 @@ const MenuCategoryItem = ({
                     // data-testid={keyId}
                     testId = {keyId}
                     count={count}
-                    stock={stock}
                     onAdd={handleAdd} 
                     onRemove={handleRemove}
                 />
