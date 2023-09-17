@@ -19,6 +19,7 @@ export const cartSlice = createSlice({
             state[id] -= 1;
         }
     },
+
   },
 })
 

@@ -2,7 +2,7 @@ import AddCartButton from "../AddToCartButton"
 // import { useSelector, useDispatch } from "react-redux";
 // import { add, remove } from "@/datas/slice/cartSlice";
 
-import withStock from "@/core/stock/WithStock";
+import withStock from "@/core/stock/withStock";
 
 const MenuCategoryItem = ({
         data,
@@ -10,12 +10,13 @@ const MenuCategoryItem = ({
         stock,
         finished,
         handleAdd,
-        handleRemove
+        handleRemove,
+        onClick
     }) => {
     //重構 => 利用withStock HOC 內部封裝useCart的hook
     const keyId = `${data.id}-${data.title}` // '15-煙燻三文魚漢堡'
     return (
-        <div className="w-[200px] p-4 mr-3 mb-10 relative  hover:shadow-xl cursor-pointer">
+        <div className="w-[200px] p-4 mr-3 mb-10 relative  hover:shadow-xl cursor-pointer" onClick={()=>onClick(data)}>
             <div className=" flex items-center justify-center select-none text-[14px]"data-testid="stock">庫存: {stock}</div>
             <img className="w-full h-[100px] select-none" alt="itemImg" src={data.image} />
             {!finished && (

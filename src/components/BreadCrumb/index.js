@@ -3,7 +3,7 @@ import {ChevronRightIcon} from '@radix-ui/react-icons'
 const BreadCrumb = () => {
     const breadArray = ['台灣', '台北市', '台北', '中正區','寵物可愛小屋'];
     return (
-        <div className="w-max text-left mt-3">
+        <div className="w-max text-left">
             <nav aria-label="breadcrumb">
                 <ol className="flex w-full flex-wrap items-center rounded-md bg-blue-gray-50 bg-opacity-60 py-2 px-4">
                     {

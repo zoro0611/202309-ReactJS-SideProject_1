@@ -1,12 +1,14 @@
 import BestSales from "../BestSales";
 import Menu from "../Menu";
-import rawData from "@/datas/mockData";
-import { useEffect, useState } from "react";
+// import rawData from "@/datas/mockData";
+import {  useEffect, useState } from "react";
 
-const MainShop = () => {
+
+const MainShop = ({rawData}) => {
     const [category, setRefinedCategory] = useState([]);
     const [data, setRefinedData] = useState([]);
-    
+
+
     useEffect(()=>{
         //1. define Category
         const refinedCategory = rawData.map(x=>x.category).filter((item, ind, arr) => arr.indexOf(item) === ind);
@@ -38,8 +40,13 @@ const MainShop = () => {
             </div>
 
             <div className="flex-1">
-                <Menu data={data}/>
+                <Menu data={data}
+                />
             </div>
+
+          
+
+
         </div>
     )
 }

@@ -1,7 +1,6 @@
 import MenuCategoryItem from "../MenuCategoryItem"
 
-const MenuCategory = ({ itemId, category, cateItems = [] }) => {
-    // console.log(cateItems)
+const MenuCategory = ({ itemId, category, cateItems = [], onClick }) => {
     return (
         <div className="mt-3">
             <h1 className="text-[30px] font-bold" id={itemId}>{category}</h1>
@@ -9,7 +8,7 @@ const MenuCategory = ({ itemId, category, cateItems = [] }) => {
                 {
                     cateItems?.map((item, index) => {
                         return (
-                            <MenuCategoryItem key={index}  data={item}/>
+                            <MenuCategoryItem key={index}  data={item} onClick={onClick}/>
                         )
                     })
                 }
