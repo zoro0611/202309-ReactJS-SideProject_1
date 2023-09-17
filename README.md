@@ -1,4 +1,18 @@
+
+//
+
 <h1>Git update history<h1/>
+
+<h3>[2023/9/17 Update進度]</h3>
+
+1. 練習使用Higher-Order Components（HOC)，用於集中管理cart的通用邏輯
+
+2. 讓每一個Item預設庫存數量5，如果out of stock就顯示售罄
+
+
+![2023/9/17 Update進度](https://github.com/zoro0611/PublicPhoto/blob/6d4c5241f8e4fcb0f595dc7d2ef839c97d7d9d67/React/ShopPage_20230917.png)
+
+
 
 <h3>[2023/9/10 Update進度]</h3>
 
