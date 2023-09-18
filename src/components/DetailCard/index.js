@@ -1,8 +1,8 @@
 import { TrashIcon, PlusIcon } from "@radix-ui/react-icons";
- 
+
 const DetailCard = (item) => {
 	if (!item) return null;
-    const itemData = item?.data;
+    const itemData = item?.item;
 	return (
 		<div className="flex w-[600px]">
 			<div
@@ -35,5 +35,8 @@ bg-black hover:opacity-75 justify-between px-4 py-2"
 		</div>
 	);
 };
- 
+
+
+
+
 export default DetailCard;
