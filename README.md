@@ -2,7 +2,7 @@
 
 <h1>Git update history<h1/>
 
-<h3>[2023.9.24 Deploy to Vercel</h3>
+<h3>[2023.9.24 Deploy to Vercel]</h3>
 https://202309-react-js-side-project-1.vercel.app/
 
 <h3>[2023/9/17 Update進度]</h3>
