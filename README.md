@@ -1,4 +1,4 @@
-
+Build Cmd: npm start
 
 <h1>Git update history<h1/>
 
