@@ -3,7 +3,7 @@ import { PlusIcon, TrashIcon } from "@radix-ui/react-icons"
 
 const AddCartButton = ({testId, count, onAdd, onRemove }) => {
     const isAdd = count > 0
-    //如果count > 0，
+    //如果count > 0，ok，显示删除按钮，否则显示添加按钮
     return (
         <div className="flex absolute top-6 right-2 p-2 bg-black rounded-full font-bold hover:bg-gray-700 cursor-pointer" 
             data-testid={testId}
